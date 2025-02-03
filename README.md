@@ -1,6 +1,6 @@
 # Tomato Timer
 
-[Features](#features) | [Usage](#how-to-use) | [Customization](#for-developers-or-customization) | [Attributions](#attributions) | [Contact](#contact)
+[Features](#features) | [Screenshots](#screenshots) | [Usage](#how-to-use) | [Customization](#for-developers-or-customization) | [Attributions](#attributions) | [Contact](#contact)
 
 Tomato Timer is a user-friendly and enhanced version of a time-management tool inspired by the Pomodoro Technique. Originally a course project from the [100 Days of Code: The Complete Python Pro Bootcamp](https://www.udemy.com/course/100-days-of-code/) by Dr. Angela Yu, this version includes several custom changes and additional features for a more engaging experience.
 
@@ -22,6 +22,14 @@ Built with Python and Tkinter, Tomato Timer is packaged using ```PyInstaller```,
 - **Custom Styling:** The user interface has been visually enhanced with unique fonts and vibrant colors to create a user-friendly experience.
 - **Custom Graphics:** Designed a custom tomato graphic and icon to replace the default image, making the display more playful and engaging.
 - **Convenient Packaging:** Packaged the program using ```PyInstaller``` to make it easy to launch directly from a desktop shortcut, without needing to manually run the Python script.
+
+## Screenshots
+|                |                     |
+| -------------- | ------------------- |
+| **At start:** | ![Tomato Timer Start Screenshot](/demo_images/tomato_timer_start_700.png) | 
+| **Work session:** | ![Tomato Timer Work Screenshot](/demo_images/tomato_timer_work_700.png) |
+| **Break session:** | ![Tomato Timer Break Screenshot](/demo_images/tomato_timer_break_700.png) |
+| **At End:** | ![Tomato Timer End Screenshot](/demo_images/tomato_timer_end_700.png) |
 
 ## How to Use
 ### Running the Program
@@ -48,8 +56,6 @@ Built with Python and Tkinter, Tomato Timer is packaged using ```PyInstaller```,
 **5. Exiting the Program:**
 
 - Close the window at any time to stop the timer and exit the program. 
-
-**Note:** If you would like to add a custom tomato icon to your desktop shortcut, feel free to download the ```tomato.ico``` file from the ```images``` folder of this repo.
 
 ## For Developers or Customization:
 
