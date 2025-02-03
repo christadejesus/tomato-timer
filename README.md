@@ -27,7 +27,7 @@ Built with Python and Tkinter, Tomato Timer is packaged using ```PyInstaller```,
 ### Running the Program
 **1. Download the Executable:**
 
-- Simply download the ```tomato_timer.exe``` file from the [Releases](#releases) section of the repository.
+- Simply download the ```tomato_timer.exe``` file from the [Releases](https://github.com/christadejesus/tomato-timer/releases) section of the repository.
 
 **2. Running the Timer:**
 
