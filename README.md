@@ -93,7 +93,7 @@ Feel free to modify the Python code, images, or sounds. Once you've made changes
   - [Pacifico](https://fonts.google.com/specimen/Pacifico)
   - [Poppins](https://fonts.google.com/Poppins)
   
-## Get in Touch
+## Contact
 
 If you have any questions, suggestions, or want to contribute to this project, feel free to reach out:
 
