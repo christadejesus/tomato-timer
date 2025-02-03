@@ -21,6 +21,7 @@ def resource_path(relative_path):
 pygame.mixer.init()
 break_sound = pygame.mixer.Sound(resource_path("sound/hotel-bell-ding-3-202587.wav"))
 work_sound = pygame.mixer.Sound(resource_path("sound/hotel-bell-ding-1-174457.wav"))
+end_sound = pygame.mixer.Sound(resource_path("sound/hotel-bell-ding-4-202588.wav"))
 
 # ---------------------------- IMAGES ------------------------------- #
 icon_image = PhotoImage(file=resource_path("images/tomato_icon.png"))
@@ -31,6 +32,7 @@ font_path = "fonts/Pacifico-Regular.ttf"
 window.tk.call('font', 'create', 'Pacifico', '-family', 'Pacifico')
 window.tk.call('font', 'create', 'Poppins', '-family', 'Poppins')
 PACIFICO_FONT_LG = tkFont.Font(family="Pacifico", size=32, weight="bold")
+PACIFICO_FONT_MD = tkFont.Font(family="Pacifico", size=28, weight="bold")
 PACIFICO_FONT_SM = tkFont.Font(family="Pacifico", size=14, weight="bold")
 POPPINS_FONT = tkFont.Font(family="Poppins", size=12)
 
@@ -55,7 +57,7 @@ timer = None
 def reset_timer():
     window.after_cancel(timer)
     start_button.state(["!disabled"])
-    heading_label.config(text="Timer", fg=GREEN)
+    heading_label.config(text="Tomato Timer", fg=GREEN)
     canvas.itemconfig(timer_text, text="00:00")
     counter_label.config(text="")
     global reps
@@ -67,12 +69,13 @@ def start_timer():
     reps += 1
     work_sec = WORK_MIN * 60
     short_break_sec = SHORT_BREAK_MIN * 60
-    long_break_sec = LONG_BREAK_MIN * 60
+    long_break_sec = LONG_BREAK_MIN *  60
     start_button.state(["disabled"])
 
     # If it's the 9th rep:
     if reps == 9:
         window.after_cancel(timer)
+        end_sound.play()
         heading_label.config(text="Great job!", fg=GREEN)
         canvas.itemconfig(timer_text, text="00:00")
     # If it's the 8th rep:
@@ -118,7 +121,7 @@ window.config(padx=60, pady=40, bg=YELLOW)
 window.iconphoto(False, icon_image)
 
 # ---------------------------- HEADING ------------------------------- #
-heading_label = Label(window, text="Timer", font=PACIFICO_FONT_LG, fg=GREEN, bg=YELLOW)
+heading_label = Label(window, text="Tomato Timer", font=PACIFICO_FONT_MD, fg=GREEN, bg=YELLOW, width=10)
 heading_label.grid(column=1, row=0)
 
 # ---------------------------- TIMER ------------------------------- #
